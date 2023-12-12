@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='icon' type='image/png' href='favicon.png'>
+<link rel='stylesheet' type='text/css' href='style.css'>
+<script src='https://code.jquery.com/jquery-3.7.1.slim.min.js'></script>
+<script src='script.js'></script>
+<title>List</title>
+</head>
+<body>
+<table>
+<thead>
+<tr>
+<td><img src='favicon.png' alt='' width='32' height='32'></td>
+<td>
+<table>
+<thead>
+<tr><td>List</td></tr>
+<tr>
+<td>
+<form>
+<input type='text' placeholder='Search...' id='search'>
+</form>
+</td>
+</tr>
+</thead>
+</table>
+</td>
+</tr>
+</thead>
+</table>
+<hr>
+<form>
+<table>
+<tbody class='tags'>
+<tr>
+<td style='font-weight: bold;'>
+<label>
+Open Sites Only
+<input type='checkbox' id='live'>
+</label>
+</td>
+</tr>
+<tr>
+<td style='font-weight: bold;'>Value</td>
+<td>
+<label style='padding-left: 20px;'>
+Major
+<input type='checkbox' class='tag' value='Major'>
+</label>
+<label style='padding-left: 20px;'>
+Moderate
+<input type='checkbox' class='tag' value='Moderate'>
+</label>
+<label style='padding-left: 20px;'>
+Minor
+<input type='checkbox' class='tag' value='Minor'>
+</label>
+</td>
+</tr>
+<tr>
+<td style='font-weight: bold;'>Locale</td>
+<td>
+<label style='padding-left: 20px;'>
+International
+<input type='checkbox' class='tag' value='International'>
+</label>
+<label style='padding-left: 20px;'>
+National
+<input type='checkbox' class='tag' value='National'>
+</label>
+<label style='padding-left: 20px;'>
+Provinicial
+<input type='checkbox' class='tag' value='Provinicial'>
+</label>
+<label style='padding-left: 20px;'>
+Local
+<input type='checkbox' class='tag' value='Local'>
+</label>
+<label style='padding-left: 20px;'>
+University of Manitoba
+<input type='checkbox' class='tag' value='University of Manitoba'>
+</label>
+</td>
+</tr>
+<tr>
+<td style='font-weight: bold;'>Fields</td>
+<td>
+<label style='padding-left: 20px;'>
+Agriculture
+<input type='checkbox' class='tag' value='Agriculture'>
+</label>
+<label style='padding-left: 20px;'>
+Business
+<input type='checkbox' class='tag' value='Business'>
+</label>
+<label style='padding-left: 20px;'>
+Chemistry
+<input type='checkbox' class='tag' value='Chemistry'>
+</label>
+<label style='padding-left: 20px;'>
+Culinary Arts
+<input type='checkbox' class='tag' value='Culinary Arts'>
+</label>
+<label style='padding-left: 20px;'>
+Cybersecurity
+<input type='checkbox' class='tag' value='Cybersecurity'>
+</label>
+<label style='padding-left: 20px;'>
+Education
+<input type='checkbox' class='tag' value='Education'>
+</label>
+<label style='padding-left: 20px;'>
+Law
+<input type='checkbox' class='tag' value='Law'>
+</label>
+<label style='padding-left: 20px;'>
+Logistics
+<input type='checkbox' class='tag' value='Logistics'>
+</label>
+<label style='padding-left: 20px;'>
+Manufacturing Engineering
+<input type='checkbox' class='tag' value='Manufacturing Engineering'>
+</label>
+<label style='padding-left: 20px;'>
+Music
+<input type='checkbox' class='tag' value='Music'>
+</label>
+<label style='padding-left: 20px;'>
+Physics
+<input type='checkbox' class='tag' value='Physics'>
+</label>
+<label style='padding-left: 20px;'>
+STEM
+<input type='checkbox' class='tag' value='STEM'>
+</label>
+<label style='padding-left: 20px;'>
+Theatre
+<input type='checkbox' class='tag' value='Theatre'>
+</label>
+</td>
+</tr>
+<tr>
+<td style='font-weight: bold;'>Miscellaneous</td>
+<td>
+<label style='padding-left: 20px;'>
+Bursary
+<input type='checkbox' class='tag' value='Bursary'>
+</label>
+<label style='padding-left: 20px;'>
+Indigenous
+<input type='checkbox' class='tag' value='Indigenous'>
+</label>
+<label style='padding-left: 20px;'>
+Leadership
+<input type='checkbox' class='tag' value='Leadership'>
+</label>
+<label style='padding-left: 20px;'>
+Parental Employment
+<input type='checkbox' class='tag' value='Parental Employment'>
+</label>
+</td>
+</tr>
+</tbody>
+</table>
+</form>
+<hr>
+<table>
+<thead>
+<tr>
+<td>Title</td>
+<td>Date</td>
+<td>Value</td>
+<td>Locale</td>
+<td>Fields</td>
+<td>Miscellaneous</td>
+</thead>
+<tbody>
+<tr class='site' data-url='10-words.html' data-val='1000'>
+<td class='title'>10 Words or Less Scholarship</td>
+<td class='date' data-late=''>2023-11-15T00:00:00</td>
+<td class='tag'>$1000</td>
+<td class='tag'>National</td>
+<td class='tag'></td>
+<td class='tag'></td>
+<tr class='site' data-url='abbott-fenner.html' data-val='1000'>
+<td class='title'>Abbott & Fenner scholarship</td>
+<td class='date' data-late=''>2024-07-07T00:00:00</td>
+<td class='tag'>$1000</td>
+<td class='tag'></td>
+<td class='tag'></td>
+<td class='tag'></td>
+<tr class='site' data-url='aes.html' data-val='500'>
+<td class='title'>AES Engineers Essay Scholarship</td>
+<td class='date' data-late=''>2024-10-08T00:00:00</td>
+<td class='tag'>$500</td>
+<td class='tag'>National</td>
+<td class='tag'></td>
+<td class='tag'></td>
+<tr class='site' data-url='allied.html' data-val='1000'>
+<td class='title'>Allied Van Lines Scholarship</td>
+<td class='date' data-late=''>2023-12-15T00:00:00</td>
+<td class='tag'>$1000</td>
+<td class='tag'>National</td>
+<td class='tag'>Logistics</td>
+<td class='tag'></td>
+<tr class='site' data-url='bayer.html' data-val='3000'>
+<td class='title'>Bayer Crop Science Opportunity Scholarship</td>
+<td class='date' data-late=''>2024-06-08T17:00:00Z</td>
+<td class='tag'>$3000</td>
+<td class='tag'>National</td>
+<td class='tag'>Agriculture, Culinary Arts</td>
+<td class='tag'></td>
+<tr class='site' data-url='bdavis.html' data-val='1000'>
+<td class='title'>B. Davis Scholarship</td>
+<td class='date' data-late=''>2024-05-21T00:00:00</td>
+<td class='tag'>$1000</td>
+<td class='tag'>National</td>
+<td class='tag'></td>
+<td class='tag'></td>
+<tr class='site' data-url='blue-ocean.html' data-val='1000'>
+<td class='title'>Blue Ocean Competition</td>
+<td class='date' data-late=''>2024-02-18T00:00:00</td>
+<td class='tag'>$1000</td>
+<td class='tag'></td>
+<td class='tag'></td>
+<td class='tag'></td>
+<tr class='site' data-url='bmo.html' data-val='16000'>
+<td class='title'>BMO Financial Group Leader of Tomorrow Scholarships</td>
+<td class='date' data-late=''>2023-12-01T06:00:00Z</td>
+<td class='tag'>$16 000</td>
+<td class='tag'>University of Manitoba</td>
+<td class='tag'></td>
+<td class='tag'></td>
+<tr class='site' data-url='burger-king.html' data-val='60000'>
+<td class='title'>Burger King Foundation Scholarship</td>
+<td class='date' data-late=''>2023-12-15T00:00:00</td>
+<td class='tag'>between $1000 and $60 000</td>
+<td class='tag'>National</td>
+<td class='tag'></td>
+<td class='tag'></td>
+<tr class='site' data-url='business-council.html'>
+<td class='title'>Business Council of Manitoba Aboriginal Educational Award</td>
+<td class='date' data-late=''>2024-03-31T00:00:00</td>
+<td class='tag'>Unknown</td>
+<td class='tag'>Provincial</td>
+<td class='tag'></td>
+<td class='tag'>Indigenous</td>
+<tr class='site' data-url='capsle.html' data-val='1000'>
+<td class='title'>Canadian Association for the Practical Study of Law in Educaction Bursary</td>
+<td class='date' data-late=''>2024-07-31T00:00:00</td>
+<td class='tag'>$1000</td>
+<td class='tag'>National</td>
+<td class='tag'>Education, Law</td>
+<td class='tag'></td>
+<tr class='site' data-url='crohn.html' data-val='5000'>
+<td class='title'>Crohn’s and Colitis Canada’s AbbVie IBD Scholarship Program</td>
+<td class='date' data-late=''>2024-05-15T00:00:00</td>
+<td class='tag'>$5000</td>
+<td class='tag'>National</td>
+<td class='tag'></td>
+<td class='tag'></td>
+<tr class='site' data-url='dakota.html' data-val='500'>
+<td class='title'>Dakota Community Centre Scholarship</td>
+<td class='date' data-late=''>2024-03-31T00:00:00</td>
+<td class='tag'>$500</td>
+<td class='tag'></td>
+<td class='tag'></td>
+<td class='tag'></td>
+<tr class='site' data-url='diabetes.html' data-val='2000'>
+<td class='title'>Diabetes Hope Scholarship Program</td>
+<td class='date' data-late=''>2024-03-04T00:00:00</td>
+<td class='tag'>$2000</td>
+<td class='tag'></td>
+<td class='tag'></td>
+<td class='tag'></td>
+<tr class='site' data-url='driver.html' data-val='500'>
+<td class='title'>Driver Education Initiative Award</td>
+<td class='date' data-late=''>2023-11-30T00:00:00</td>
+<td class='tag'>$500</td>
+<td class='tag'></td>
+<td class='tag'></td>
+<td class='tag'></td>
+<tr class='site' data-url='g3.html' data-val='5000'>
+<td class='title'>G3 Grow Beyond Scholarship</td>
+<td class='date' data-late=''>2024-05-03T00:00:00</td>
+<td class='tag'>$5000</td>
+<td class='tag'>National</td>
+<td class='tag'>Agriculture</td>
+<td class='tag'></td>
+<tr class='site' data-url='arctic.html' data-val='500'>
+<td class='title'>Got a Spine Scholarship</td>
+<td class='date' data-late=''>2024-05-02T00:00:00</td>
+<td class='tag'>$500</td>
+<td class='tag'></td>
+<td class='tag'></td>
+<td class='tag'></td>
+<tr class='site' data-url='heer.html' data-val='2000'>
+<td class='title'>Heer Law Entrepreneurship Scholarship</td>
+<td class='date' data-late=''>2023-12-31T00:00:00</td>
+<td class='tag'>$2000</td>
+<td class='tag'></td>
+<td class='tag'></td>
+<td class='tag'></td>
+<tr class='site' data-url='isc2.html' data-val='5000'>
+<td class='title'>ISC2 Information Security Undergraduate Scholarship</td>
+<td class='date' data-late=''>2024-02-29T16:59:00Z</td>
+<td class='tag'>$1000 to $5000</td>
+<td class='tag'>National</td>
+<td class='tag'>Cybersecurity</td>
+<td class='tag'></td>
+<tr class='site' data-url='danzker.html' data-val='10000'>
+<td class='title'>Jewish Foundation of Manitoba Mark & Dorothy Danzker Scholarship</td>
+<td class='date' data-late=''>2024-02-28T00:00:00</td>
+<td class='tag'>$10 000</td>
+<td class='tag'>Provincial</td>
+<td class='tag'></td>
+<td class='tag'></td>
+<tr class='site' data-url='kochhar.html' data-val='1000'>
+<td class='title'>Kochhar & Co. Scholarship</td>
+<td class='date' data-late=''>2024-03-31T00:00:00</td>
+<td class='tag'>$1000</td>
+<td class='tag'>National</td>
+<td class='tag'></td>
+<td class='tag'></td>
+<tr class='site' data-url='la-tutors.html' data-val='500'>
+<td class='title'>LA Tutors Innovation in Education Scholarship</td>
+<td class='date' data-late=''>Unknown</td>
+<td class='tag'>$500</td>
+<td class='tag'></td>
+<td class='tag'></td>
+<td class='tag'></td>
+<tr class='site' data-url='lawntrepreneur.html' data-val='1000'>
+<td class='title'>LawnStarter Lawntrepreneur Scholarship</td>
+<td class='date' data-late=''>2024-08-20T00:00:00</td>
+<td class='tag'>$1000</td>
+<td class='tag'>National</td>
+<td class='tag'>Business</td>
+<td class='tag'></td>
+<tr class='site' data-url='leavitt.html' data-val='500'>
+<td class='title'>Leavitt Machinery Scholarship Program</td>
+<td class='date' data-late=''>2024-05-01T00:00:00</td>
+<td class='tag'>$500</td>
+<td class='tag'>National</td>
+<td class='tag'></td>
+<td class='tag'></td>
+<tr class='site' data-url='leonard.html' data-val='1500'>
+<td class='title'>Leonard Foundation Scholarship</td>
+<td class='date' data-late=''>2024-03-31T00:00:00</td>
+<td class='tag'>$1000 to $1500</td>
+<td class='tag'>National</td>
+<td class='tag'></td>
+<td class='tag'>Bursary</td>
+<tr class='site' data-url='lionel.html' data-val='16000'>
+<td class='title'>Lionel Chemistry Scholarship</td>
+<td class='date' data-late=''>2024-03-01T00:00:00</td>
+<td class='tag'>up to $16 000</td>
+<td class='tag'>National</td>
+<td class='tag'>Chemistry</td>
+<td class='tag'></td>
+<tr class='site' data-url='loran.html' data-val='100000'>
+<td class='title'>Loran Award</td>
+<td class='date' data-late=''>2023-10-12T00:00:00Z</td>
+<td class='tag'>up to over $100 000</td>
+<td class='tag'>National</td>
+<td class='tag'></td>
+<td class='tag'></td>
+<tr class='site' data-url='santi.html' data-val='1000'>
+<td class='title'>Luke Santi Memorial Award for Student Achievement</td>
+<td class='date' data-late=''>2024-05-31T00:00:00</td>
+<td class='tag'>$1000</td>
+<td class='tag'>National</td>
+<td class='tag'>Physics</td>
+<td class='tag'></td>
+<tr class='site' data-url='mahcp.html' data-val='500'>
+<td class='title'>Manitoba Association of Healthcare Professionals Scholarship Fund</td>
+<td class='date' data-late=''>2024-07-29T21:00:00Z</td>
+<td class='tag'>$500</td>
+<td class='tag'>Provincial</td>
+<td class='tag'></td>
+<td class='tag'>Parental Employment</td>
+<tr class='site' data-url='exceptional.html' data-val='750'>
+<td class='title'>Manitoba Council for Exceptional Children Scholarships</td>
+<td class='date' data-late=''>2024-01-09T00:00:00</td>
+<td class='tag'>$750</td>
+<td class='tag'>Provincial</td>
+<td class='tag'></td>
+<td class='tag'></td>
+<tr class='site' data-url='mrmta.html' data-val='500'>
+<td class='title'>Manitoba Registered Music Teachers' Association Music Scholarship Series</td>
+<td class='date' data-late=''>2023-11-02T02:00:00Z</td>
+<td class='tag'>$500</td>
+<td class='tag'>Provincial</td>
+<td class='tag'>Music</td>
+<td class='tag'></td>
+<tr class='site' data-url='manulife.html' data-val='10000'>
+<td class='title'>Manulife Life Lessons Scholarship Program</td>
+<td class='date' data-late=''>2024-03-31T00:00:00</td>
+<td class='tag'>$10 000</td>
+<td class='tag'>National</td>
+<td class='tag'></td>
+<td class='tag'></td>
+<tr class='site' data-url='nupge.html' data-val='2500'>
+<td class='title'>National Union of Public and General Employees Scholarships</td>
+<td class='date' data-late=''>2024-07-07T00:00:00</td>
+<td class='tag'>$2500</td>
+<td class='tag'>National</td>
+<td class='tag'></td>
+<td class='tag'>Parental Employment</td>
+<tr class='site' data-url='van-lines.html' data-val='1000'>
+<td class='title'>North American Van Lines Logistics Scholarship Competition</td>
+<td class='date' data-late=''>Unknown</td>
+<td class='tag'>$1000</td>
+<td class='tag'>National</td>
+<td class='tag'>Logistics</td>
+<td class='tag'></td>
+<tr class='site' data-url='oyf.html' data-val='1000'>
+<td class='title'>Outstanding Young Farmer Memorial Scholarship</td>
+<td class='date' data-late=''>2024-06-30T00:00:00</td>
+<td class='tag'>$1000</td>
+<td class='tag'>National</td>
+<td class='tag'>Agriculture</td>
+<td class='tag'></td>
+<tr class='site' data-url='phoenix.html' data-val='1000'>
+<td class='title'>Phoenix Recreation Association Scholarship</td>
+<td class='date' data-late=''>2024-01-06T00:00:00</td>
+<td class='tag'>$1000</td>
+<td class='tag'>Local</td>
+<td class='tag'></td>
+<td class='tag'></td>
+<tr class='site' data-url='rainbow-stage.html' data-val='750'>
+<td class='title'>Rainbow Stage Scholarship</td>
+<td class='date' data-late=''>2024-05-23T00:00:00</td>
+<td class='tag'>$750</td>
+<td class='tag'>Provincial</td>
+<td class='tag'>Theatre</td>
+<td class='tag'></td>
+<tr class='site' data-url='remax.html' data-val='1000'>
+<td class='title'>REMAX Canada Quest for Excellence Scholarship</td>
+<td class='date' data-late=''>2024-03-13T00:00:00</td>
+<td class='tag'>$1000</td>
+<td class='tag'></td>
+<td class='tag'></td>
+<td class='tag'></td>
+<tr class='site' data-url='rbc.html' data-val='2500'>
+<td class='title'>Scholarship Program for the Children of RBC Employees</td>
+<td class='date' data-late=''>Unknown</td>
+<td class='tag'>$2500</td>
+<td class='tag'>National</td>
+<td class='tag'></td>
+<td class='tag'>Parental Employment</td>
+<tr class='site' data-url='schulich.html' data-val='120000'>
+<td class='title'>Schulich Leader Scholarships</td>
+<td class='date' data-late=''>2024-01-30T00:00:00</td>
+<td class='tag'>$120 000</td>
+<td class='tag'>National</td>
+<td class='tag'>STEM</td>
+<td class='tag'></td>
+<tr class='site' data-url='living-oceans.html' data-val='500'>
+<td class='title'>Science Without Borders Challenge</td>
+<td class='date' data-late=''>2024-03-04T00:00:00</td>
+<td class='tag'>between $200 and $500</td>
+<td class='tag'></td>
+<td class='tag'></td>
+<td class='tag'></td>
+<tr class='site' data-url='scouts.html' data-val='6000'>
+<td class='title'>Scouts Canada Scholarship Program</td>
+<td class='date' data-late=''>Unknown</td>
+<td class='tag'>$6000</td>
+<td class='tag'>National</td>
+<td class='tag'></td>
+<td class='tag'></td>
+<tr class='site' data-url='smeef.html' data-val='20000'>
+<td class='title'>SME Education Foundation Scholarship</td>
+<td class='date' data-late=''>2024-02-01T00:00:00</td>
+<td class='tag'>$20 000</td>
+<td class='tag'>National</td>
+<td class='tag'>Manufacturing Engineering</td>
+<td class='tag'></td>
+<tr class='site' data-url='td.html' data-val='70000'>
+<td class='title'>TD Scholarships for Community Leadership</td>
+<td class='date' data-late=''>Unknown</td>
+<td class='tag'>$70 000</td>
+<td class='tag'>National</td>
+<td class='tag'></td>
+<td class='tag'>Leadership</td>
+<tr class='site' data-url='terry-fox.html' data-val='28000'>
+<td class='title'>Terry Fox Humanitarian Award</td>
+<td class='date' data-late=''>2023-12-02T07:59:00Z</td>
+<td class='tag'>$28 000</td>
+<td class='tag'>National</td>
+<td class='tag'></td>
+<td class='tag'></td>
+<tr class='site' data-url='united-way.html' data-val='500'>
+<td class='title'>United Way Youth Leaders in Action Scholarship</td>
+<td class='date' data-late=''>2024-04-05T00:00:00</td>
+<td class='tag'>$500</td>
+<td class='tag'>Local</td>
+<td class='tag'></td>
+<td class='tag'></td>
+<tr class='site' data-url='mennonite.html' data-val='1000'>
+<td class='title'>Winnipeg Mennonite School Alumni Scholarship</td>
+<td class='date' data-late=''>Unknown</td>
+<td class='tag'>$1000</td>
+<td class='tag'></td>
+<td class='tag'></td>
+<td class='tag'></td>
+<tr class='site' data-url='8b.html' data-val='1200'>
+<td class='title'>World of Eight Billion Competition</td>
+<td class='date' data-late=''>2024-03-05T00:00:00</td>
+<td class='tag'>between $300 and $1200</td>
+<td class='tag'></td>
+<td class='tag'></td>
+<td class='tag'></td>
+<tr class='site' data-url='yorkshire.html' data-val='5000'>
+<td class='title'>Yorkshire Valley Farms Canadian Eco-Scholar Award</td>
+<td class='date' data-late=''>2024-02-09T00:00:00</td>
+<td class='tag'>between $1000 and $5000</td>
+<td class='tag'>National</td>
+<td class='tag'></td>
+<td class='tag'></td>
+</tbody>
+</table>
+<hr>
+<table>
+<thead>
+<tr>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tbody>
+<tr class='comp' data-url='www.mhsaa.ca/awards'>
+<td>Manitoba High Schools Athletic Association Scholarship</td>
+<td>About sixteen sports-related scholarships.  After clicking, hover over the "AWARDS" subheader on the website.</td>
+</tr>
+<tr class='comp' data-url='https://catalogue.rrc.ca/availableawards.aspx'>
+<td>Red River Collegiate Scholarships and Bursaries</td>
+<td>Here you can find a list of many scholarships and bursaries specific to Red River Collegiate.</td>
+</tr>
+<tr class='comp' data-url='https://ui-webapps.ad.umanitoba.ca/searchableAwards'>
+<td>University of Manitoba Scholarships and Bursaries</td>
+<td>Here you can find a list of many scholarships and bursaries specific to the University of Manitoba.</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
